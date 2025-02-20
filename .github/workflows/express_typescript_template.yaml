@@ -1,0 +1,26 @@
+name: Express Typescript Template
+
+on:
+  pull_request:
+    paths:
+      - 'Express Typescript Template/**'
+
+jobs:
+  lint:
+    name: Run ESLint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 22
+
+      - name: Install dependencies and run eslint
+        run: |
+          cd "Express Typescript Template"
+          npm install
+          npm run lint
