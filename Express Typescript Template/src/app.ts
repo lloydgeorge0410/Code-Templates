@@ -2,9 +2,9 @@ import bodyParser from "body-parser";
 import cors from "cors";
 import express, { Express } from "express";
 
-import router from "./routes";
-import httpLogger from "./middlewares/httpLogger";
 import errorHandler from "./middlewares/errorHandler";
+import httpLogger from "./middlewares/httpLogger";
+import router from "./routes";
 
 const app: Express = express();
 
