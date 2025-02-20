@@ -6,7 +6,6 @@ const router = Router();
 router.get(
   "/",
   asyncHandler(async (_: Request, res: Response) => {
-    throw Error("test error")
     res.send("Server is healthy.");
   }),
 );
