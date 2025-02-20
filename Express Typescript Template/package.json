@@ -1,0 +1,28 @@
+{
+  "name": "express-typescript-template",
+  "version": "1.0.0",
+  "description": "Template for building backend using Express and Typescript",
+  "main": "main.ts",
+  "scripts": {
+    "build": "rimraf ./dist && tsc --skipLibCheck",
+    "start": "node dist/main.js",
+    "dev": "nodemon",
+    "test": "jest"
+  },
+  "author": "Lloyd",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.13.4",
+    "concurrently": "^9.1.2",
+    "nodemon": "^3.1.9",
+    "rimraf": "^6.0.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.3"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
