@@ -1,0 +1,21 @@
+[project]
+name = "python-fastapi-template"
+version = "1.0.0"
+description = "Template for building backend using python and FastAPI."
+authors = [
+    {name = "Lloyd"}
+]
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "fastapi[all] (>=0.115.8,<0.116.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+
+[tool.poetry]
+package-mode = false
