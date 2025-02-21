@@ -5,4 +5,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Application is healthy."}
+    return "Server is healthy."
